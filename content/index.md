@@ -77,7 +77,7 @@ Documentación oficial de la cátedra de Sistemas Operativos (ULA). Aprende cóm
 
 ::u-page-section{class="dark:bg-neutral-950"}
 #title
-Powered by Nuxt UI components
+Una simulación de ingeniería real
 
 #links
   :::u-button
@@ -85,163 +85,78 @@ Powered by Nuxt UI components
   color: neutral
   size: lg
   target: _blank
-  to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
+  to: /getting-started
   trailingIcon: i-lucide-arrow-right
   variant: subtle
   ---
-  Explore Nuxt UI
+  Ver plan de estudios
   :::
 
 #features
   :::u-page-feature
   ---
-  icon: i-lucide-palette
+  icon: i-simple-icons-c
   ---
   #title
-  100+ UI Components
+  C Puro (Standard C11)
 
   #description
-  Access the complete Nuxt UI component library. From badges to modals, everything styled and accessible out of the box.
+  Sin Garbage Collectors ni abstracciones costosas. Gestionarás tu propia memoria y entenderás el costo de cada línea de código.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-type
+  icon: i-simple-icons-linux
   ---
   #title
-  Beautiful Typography
+  Linux nativo
 
   #description
-  Pre-styled prose components with perfect visual harmony. No need for @tailwindcss/typography - get precise control over every element.
+  Windows es para usuarios; Linux es para ingenieros. Trabajaremos sobre WSL2 o Linux nativo para interactuar directo con el Kernel.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-layers
+  icon: i-lucide-git-pull-request
   ---
   #title
-  Rich Prose Components
+  Git & GitHub Flow
 
   #description
-  Accordions, cards, callouts, tabs, steps, code blocks, and more - all provided by Nuxt UI for interactive documentation.
+  Olvida enviar archivos .zip. Aquí se trabaja con Forks, Ramas (Branches) y Pull Requests, como en la industria.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-search
+  icon: i-lucide-server
   ---
   #title
-  Built-in Search
+  Proyectos, no exámenes
 
   #description
-  Full-text search with ContentSearch component. No need for Algolia - instant, relevant results with keyboard shortcuts (⌘K).
+  Construirás un malloc, una herramienta de gestión Cloud y un Servidor Web concurrente capaz de manejar tráfico real.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-navigation
+  icon: i-lucide-dumbbell
   ---
   #title
-  Smart Navigation
+  El gimnasio "C-lings"
 
   #description
-  Auto-generated navigation with ContentNavigation and ContentToc components. Sticky table of contents and prev/next links.
+  Un repositorio con decenas de ejercicios rotos automatizados. Tu tarea diaria es arreglarlos hasta que pasen los tests.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-moon
+  icon: i-lucide-shield-alert
   ---
   #title
-  Dark Mode Ready
+  Seguridad ofensiva
 
   #description
-  Automatic theme switching with smooth transitions. Respects system preferences and remembers user choice.
-  :::
-::
-
-::u-page-section{class="dark:bg-neutral-950"}
-#title
-Enhanced with Nuxt Content
-
-#links
-  :::u-button
-  ---
-  color: neutral
-  size: lg
-  target: _blank
-  to: https://content.nuxt.com/docs/getting-started/installation
-  trailingIcon: i-lucide-arrow-right
-  variant: subtle
-  ---
-  Explore Nuxt Content
-  :::
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-simple-icons-markdown
-  ---
-  #title
-  MDC Enhanced Markdown
-
-  #description
-  Write in Markdown while embedding Vue components. Seamlessly integrate interactive elements in your content.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-text
-  ---
-  #title
-  File-based Routing
-
-  #description
-  Organize content in folders and files. Your documentation structure automatically becomes your navigation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-code
-  ---
-  #title
-  Syntax Highlighting
-
-  #description
-  Beautiful code blocks with language detection, line numbers, and copy buttons. Support for 100+ languages.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-database
-  ---
-  #title
-  Content Database
-
-  #description
-  Query your content with a MongoDB-like API. Filter, sort, and search through your documentation programmatically.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-code
-  ---
-  #title
-  Frontmatter Support
-
-  #description
-  Add metadata to your content files. Define SEO tags, navigation properties, and custom fields.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-git-branch
-  ---
-  #title
-  Version Control
-
-  #description
-  Content lives in your repository. Branch, review, and deploy documentation alongside your code.
+  Aprenderás a programar defendiéndote. Buffer Overflows, Race Conditions y fugas de memoria serán tus enemigos diarios.
   :::
 ::
 
@@ -249,16 +164,16 @@ Enhanced with Nuxt Content
   :::u-page-c-t-a
   ---
   links:
-    - label: Start building
+    - label: Configurar mi entorno
       to: '/getting-started'
       trailingIcon: i-lucide-arrow-right
-    - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/docs'
+    - label: Ver en GitHub
+      to: 'https://github.com/dimitrio-m/ula-os-wiki'
       target: _blank
       variant: subtle
       icon: i-simple-icons-github
-  title: Ready to build an amazing documentation?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
+  title: ¿Listo para escribir código de verdad?
+  description: El semestre A-2026 ya comenzó. Prepara tu terminal, clona los repositorios y comienza a aprender.
   class: dark:bg-neutral-950
   ---
 

@@ -28,6 +28,11 @@ export default defineNuxtConfig({
           langs: [
             'c',
           ],
+          theme: {
+            default: 'github-light-high-contrast',
+            light: 'github-light-high-contrast',
+            dark: 'github-dark-high-contrast',
+          },
         },
       },
     },
