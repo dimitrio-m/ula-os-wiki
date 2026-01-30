@@ -9,11 +9,11 @@ export default defineNuxtConfig({
     'nuxt-llms',
     '@nuxtjs/mcp-toolkit',
     '@nuxt/a11y',
-    '@nuxt/hints'
+    '@nuxt/hints',
   ],
 
   devtools: {
-    enabled: true
+    enabled: true,
   },
 
   css: ['~/assets/css/main.css'],
@@ -22,14 +22,19 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         toc: {
-          searchDepth: 1
-        }
-      }
-    }
+          searchDepth: 1,
+        },
+        highlight: {
+          langs: [
+            'c',
+          ],
+        },
+      },
+    },
   },
 
   experimental: {
-    asyncContext: true
+    asyncContext: true,
   },
 
   compatibilityDate: '2024-07-11',
@@ -37,24 +42,24 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/'
+        '/',
       ],
       crawlLinks: true,
-      autoSubfolderIndex: false
-    }
+      autoSubfolderIndex: false,
+    },
   },
 
   eslint: {
     config: {
       stylistic: {
         commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
+        braceStyle: '1tbs',
+      },
+    },
   },
 
   icon: {
-    provider: 'iconify'
+    provider: 'iconify',
   },
 
   llms: {
@@ -63,27 +68,27 @@ export default defineNuxtConfig({
     description: 'A template for building documentation with Nuxt UI and Nuxt Content.',
     full: {
       title: 'Nuxt Docs Template - Full Documentation',
-      description: 'This is the full documentation for the Nuxt Docs Template.'
+      description: 'This is the full documentation for the Nuxt Docs Template.',
     },
     sections: [
       {
         title: 'Getting Started',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/getting-started%' }
-        ]
+          { field: 'path', operator: 'LIKE', value: '/getting-started%' },
+        ],
       },
       {
         title: 'Essentials',
         contentCollection: 'docs',
         contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/essentials%' }
-        ]
-      }
-    ]
+          { field: 'path', operator: 'LIKE', value: '/essentials%' },
+        ],
+      },
+    ],
   },
 
   mcp: {
-    name: 'Docs template'
-  }
+    name: 'Docs template',
+  },
 })

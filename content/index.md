@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Nuxt Docs Template
-  description: Create stunning, fast and SEO-optimized documentation sites with Nuxt UI.
+  title: Sistemas Operativos ULA
+  description: Documentación oficial, laboratorios y proyectos de la cátedra de Sistemas Operativos.
 ---
 
 ::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
@@ -12,10 +12,20 @@ orientation: horizontal
 :hero-background
 
 #title
-Ship Beautiful [Documentation]{.text-primary}.
+Sistemas Operativos ULA
 
 #description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+Documentación oficial de la cátedra de Sistemas Operativos (ULA). Aprende cómo funciona realmente el software que mueve al mundo.
+
+#body
+  :::u-alert
+  ---
+  title: La abstracción es un lujo que pagamos con rendimiento. En esta materia, no tenemos presupuesto para lujos.
+  icon: i-lucide-terminal
+  variant: subtle
+  color: neutral
+  ---
+  :::
 
 #links
   :::u-button
@@ -24,7 +34,7 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
   size: xl
   trailing-icon: i-lucide-arrow-right
   ---
-  Get started
+  Ver centenido
   :::
 
   :::u-button
@@ -33,40 +43,34 @@ Build professional documentation with Nuxt UI's powerful components, enhanced ty
   color: neutral
   variant: outline
   size: xl
-  to: https://github.com/nuxt-ui-templates/docs
+  to: https://github.com/dimitrio-m/ula-os-clings
   target: _blank
   ---
-  Use this template
+  Repo de ejercicios
   :::
 
 #default
   :::prose-pre
   ---
   code: |
-    export default defineNuxtConfig({
-      modules: [
-        '@nuxt/ui',
-        '@nuxt/content',
-        'nuxt-og-image',
-        'nuxt-llms'
-      ],
+    #include <sys/syscall.h>
 
-      css: ['~/assets/css/main.css']
-    })
-  filename: nuxt.config.ts
+    void main() {
+      // Bye printf(). Hello Kernel.
+      // syscall(ID, stdout, message, length);
+      syscall(SYS_write, 1, "Directo al Metal\n", 17);
+    }
+  filename: kernel_mode.c
   ---
 
-  ```ts [nuxt.config.ts]
-  export default defineNuxtConfig({
-    modules: [
-      '@nuxt/ui',
-      '@nuxt/content',
-      'nuxt-og-image',
-      'nuxt-llms'
-    ],
+  ```c [kernel_mode.c]
+  #include <sys/syscall.h>
 
-    css: ['~/assets/css/main.css']
-  })
+  void main() {
+    // Bye printf(). Hello Kernel.
+    // syscall(ID, stdout, message, length);
+    syscall(SYS_write, 1, "Directo al Metal\n", 17);
+  }
   ```
   :::
 ::
