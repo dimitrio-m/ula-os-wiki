@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-og-image',
-    'nuxt-llms',
     '@nuxtjs/mcp-toolkit',
     '@nuxt/a11y',
     '@nuxt/hints',
@@ -67,33 +66,8 @@ export default defineNuxtConfig({
     provider: 'iconify',
   },
 
-  llms: {
-    domain: 'https://docs-template.nuxt.dev/',
-    title: 'Nuxt Docs Template',
-    description: 'A template for building documentation with Nuxt UI and Nuxt Content.',
-    full: {
-      title: 'Nuxt Docs Template - Full Documentation',
-      description: 'This is the full documentation for the Nuxt Docs Template.',
-    },
-    sections: [
-      {
-        title: 'Getting Started',
-        contentCollection: 'docs',
-        contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/getting-started%' },
-        ],
-      },
-      {
-        title: 'Essentials',
-        contentCollection: 'docs',
-        contentFilters: [
-          { field: 'path', operator: 'LIKE', value: '/essentials%' },
-        ],
-      },
-    ],
-  },
-
   mcp: {
+    enabled: false,
     name: 'Docs template',
   },
 })

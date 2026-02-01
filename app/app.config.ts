@@ -42,19 +42,18 @@ export default defineAppConfig({
     }],
   },
   toc: {
-    title: 'Table of Contents',
     bottom: {
-      title: 'Community',
-      edit: 'https://github.com/nuxt-ui-templates/docs/edit/main/content',
+      title: 'Comunidad',
+      edit: 'https://github.com/dimitrio-m/ula-os-wiki/edit/main/content',
       links: [{
-        icon: 'i-lucide-star',
-        label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
+        icon: 'i-lucide-book-open',
+        label: 'Wiki',
+        to: 'https://github.com/dimitrio-m/ula-os-wiki',
         target: '_blank',
       }, {
-        icon: 'i-lucide-book-open',
-        label: 'Nuxt UI docs',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
+        icon: 'i-simple-icons-github',
+        label: 'Clings',
+        to: 'https://github.com/dimitrio-m/ula-os-clings',
         target: '_blank',
       }],
     },

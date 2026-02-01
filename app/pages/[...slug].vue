@@ -3,7 +3,7 @@ import type { ContentNavigationItem } from '@nuxt/content'
 import { findPageHeadline } from '@nuxt/content/utils'
 
 definePageMeta({
-  layout: 'docs'
+  layout: 'docs',
 })
 
 const route = useRoute()
@@ -17,7 +17,7 @@ if (!page.value) {
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
   return queryCollectionItemSurroundings('docs', route.path, {
-    fields: ['description']
+    fields: ['description'],
   })
 })
 
@@ -28,13 +28,13 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
+  ogDescription: description,
 })
 
 const headline = computed(() => findPageHeadline(navigation?.value, page.value?.path))
 
 defineOgImageComponent('Docs', {
-  headline: headline.value
+  headline: headline.value,
 })
 
 const links = computed(() => {
@@ -42,9 +42,9 @@ const links = computed(() => {
   if (toc?.bottom?.edit) {
     links.push({
       icon: 'i-lucide-external-link',
-      label: 'Edit this page',
+      label: 'Edita esta página',
       to: `${toc.bottom.edit}/${page?.value?.stem}.${page?.value?.extension}`,
-      target: '_blank'
+      target: '_blank',
     })
   }
 
@@ -65,8 +65,6 @@ const links = computed(() => {
           :key="index"
           v-bind="link"
         />
-
-        <PageHeaderLinks />
       </template>
     </UPageHeader>
 
@@ -86,7 +84,6 @@ const links = computed(() => {
       #right
     >
       <UContentToc
-        :title="toc?.title"
         :links="page.body?.toc?.links"
       >
         <template
