@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/mcp-toolkit',
     '@nuxt/a11y',
     '@nuxt/hints',
+    '@nuxtjs/plausible',
   ],
 
   devtools: {

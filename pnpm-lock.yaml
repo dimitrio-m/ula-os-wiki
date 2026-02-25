@@ -38,6 +38,9 @@ importers:
       '@nuxtjs/mdc':
         specifier: ^0.20.1
         version: 0.20.1(magicast@0.5.1)
+      '@nuxtjs/plausible':
+        specifier: 3.0.1
+        version: 3.0.1(magicast@0.5.1)
       '@vueuse/core':
         specifier: ^14.2.1
         version: 14.2.1(vue@3.5.27(typescript@5.9.3))
@@ -1258,6 +1261,9 @@ packages:
   '@nuxtjs/mdc@0.20.1':
     resolution: {integrity: sha512-fGmtLDQAmmDHF5Z37Apfc3k806rb2XWDOQFhb5xlDSL7+HiiUjyFy3ctx3qWdlC08dRzfAetmsGOYbfDqYsB/w==}
 
+  '@nuxtjs/plausible@3.0.1':
+    resolution: {integrity: sha512-T+F5EDI9t9ribHyhCaAt4mfetualCGuHu71mghjyOQAufBeGtxNdfjT/g4QcJnpG+pqfm4Lpe+hWBZhtoF4bkw==}
+
   '@ota-meshi/ast-token-store@0.3.0':
     resolution: {integrity: sha512-XRO0zi2NIUKq2lUk3T1ecFSld1fMWRKE6naRFGkgkdeosx7IslyUKNv5Dcb5PJTja9tHJoFu0v/7yEpAkrkrTg==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
@@ -1877,6 +1883,9 @@ packages:
   '@pkgr/core@0.2.9':
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@plausible-analytics/tracker@0.4.4':
+    resolution: {integrity: sha512-fz0NOYUEYXtg1TBaPEEvtcBq3FfmLFuTe1VZw4M8sTWX129br5dguu3M15+plOQnc181ShYe67RfwhKgK89VnA==}
 
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
@@ -8852,6 +8861,15 @@ snapshots:
       - magicast
       - supports-color
 
+  '@nuxtjs/plausible@3.0.1(magicast@0.5.1)':
+    dependencies:
+      '@nuxt/kit': 4.3.1(magicast@0.5.1)
+      '@plausible-analytics/tracker': 0.4.4
+      defu: 6.1.4
+      ufo: 1.6.3
+    transitivePeerDependencies:
+      - magicast
+
   '@ota-meshi/ast-token-store@0.3.0': {}
 
   '@oxc-minify/binding-android-arm-eabi@0.112.0':
@@ -9175,6 +9193,8 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.2.9': {}
+
+  '@plausible-analytics/tracker@0.4.4': {}
 
   '@polka/url@1.0.0-next.29': {}
 
@@ -9878,7 +9898,7 @@ snapshots:
       eslint: 9.39.2(jiti@2.6.1)
       json-stable-stringify-without-jsonify: 1.0.1
       lodash.merge: 4.6.2
-      semver: 7.7.3
+      semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
       - typescript
