@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-og-image',
-    '@nuxtjs/mcp-toolkit',
     '@nuxt/a11y',
     '@nuxt/hints',
     '@nuxtjs/plausible',
@@ -42,7 +41,7 @@ export default defineNuxtConfig({
     asyncContext: true,
   },
 
-  compatibilityDate: '2024-07-11',
+  compatibilityDate: '2026-02-27',
 
   nitro: {
     prerender: {
@@ -67,8 +66,7 @@ export default defineNuxtConfig({
     provider: 'iconify',
   },
 
-  mcp: {
-    enabled: false,
-    name: 'Docs template',
+  plausible: {
+    domain: 'dimitriosmandamadiotis.com',
   },
 })
