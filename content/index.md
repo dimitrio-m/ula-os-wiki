@@ -34,7 +34,7 @@ Documentación oficial de la cátedra de Sistemas Operativos (ULA). Aprende cóm
   size: xl
   trailing-icon: i-lucide-arrow-right
   ---
-  Ver centenido
+  Ver contenido
   :::
 
   :::u-button
